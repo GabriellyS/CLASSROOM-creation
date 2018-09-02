@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CriacaoTurmas.View"
         mc:Ignorable="d"
         Title="Cadastrar Turma" Height="368" Width="364">
-    <Grid Margin="32,10,40,26">
+    <Grid Margin="20,10,18,11">
         <Label Content="Selecione os alunos:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.5,0.5" Height="26">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -17,12 +17,19 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <CheckBox x:Name="aluno1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="21,56,0,0" Height="19"/>
         <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="201,271,0,0" VerticalAlignment="Top" Width="83" Click="btnCadastrar_Click" Height="30"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="116,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
-        <Label Content="Nome da turma:" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Height="23" Width="101"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="116,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+        <Label Content="Nome da turma:" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Height="23" Width="101"/>
         <Label Content="Turma" HorizontalAlignment="Center" Margin="112,0,42,0" VerticalAlignment="Top" Height="25" Width="130"/>
-        <Label Content="Selecione o Professor:" HorizontalAlignment="Left" Margin="1,194,0,0" VerticalAlignment="Top" Width="131"/>
-        <ComboBox x:Name="cboItem1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="137,194,0,0" Height="26"/>
+        <Label Content="Selecione o Professor:" HorizontalAlignment="Left" Margin="6,168,0,0" VerticalAlignment="Top" Width="131"/>
+        <ComboBox ItemsSource="{Binding Professor}" x:Name="cboProf" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="151,168,0,0" Loaded="cboProfessor" Height="26" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Professor}" Width="100" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
     </Grid>
 </Window>

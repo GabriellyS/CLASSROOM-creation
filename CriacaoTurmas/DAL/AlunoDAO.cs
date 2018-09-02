@@ -9,34 +9,30 @@ namespace CriacaoTurmas.DAL
 {
     class AlunoDAO
     {
-        private static Context ctx = Singleton.Instance.Context;
+        public static Context ctx = Singleton.Instance.Context;
 
         public static bool AdicionarAluno(Aluno aluno)
         {
-            if (BuscarAlunoPorMatricula(aluno) == null)
+            try
             {
-                try
-                {
-                    ctx.Alunos.Add(aluno);
-                    ctx.SaveChanges();
-                    return true;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
+                ctx.Alunos.Add(aluno);
+                ctx.SaveChanges();
+                return true;
             }
-            return false;
-        }
-
-        public static List<Aluno> ListaAluno()
-        {
-            return ctx.Alunos.ToList();
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public static Aluno BuscarAlunoPorMatricula(Aluno aluno)
         {
             return ctx.Alunos.FirstOrDefault(x => x.matricula.Equals(aluno.matricula));
+        }
+
+        public static List<Aluno> ListaAluno()
+        {
+            return ctx.Alunos.ToList();
         }
     }
 }

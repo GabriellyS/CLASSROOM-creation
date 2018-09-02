@@ -14,5 +14,10 @@
                 <MenuItem Header="Turma" HorizontalAlignment="Left" Height="45" Width="167" Margin="0,0,-8,0" Click="MenuItem_Click2"/>
             </MenuItem>
         </Menu>
+        <Menu Height="35"  VerticalAlignment="Bottom" Margin="370,0,297,266">
+            <MenuItem Header="Ver" HorizontalAlignment="Right" Height="35" Width="107"  FontSize="12">
+                <MenuItem Header="Aluno" HorizontalAlignment="Left" Height="35" Width="158" Click="MenuItem_Click3"/>
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>

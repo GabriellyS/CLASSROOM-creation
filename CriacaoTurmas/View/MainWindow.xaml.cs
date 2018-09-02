@@ -41,7 +41,11 @@ namespace CriacaoTurmas.View
             CadastTurma form = new CadastTurma();
             form.ShowDialog();
         }
-
-       
+        
+        private void MenuItem_Click3(object sender, RoutedEventArgs e)
+        {
+            Ver form = new Ver();
+            form.ShowDialog();
+        }
     }
 }

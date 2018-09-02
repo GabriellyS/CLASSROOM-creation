@@ -14,6 +14,7 @@
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -52,11 +52,9 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -79,6 +77,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Migrations\201809011726269_inicio.cs" />
+    <Compile Include="Migrations\201809011726269_inicio.Designer.cs">
+      <DependentUpon>201809011726269_inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809011750206_1.cs" />
+    <Compile Include="Migrations\201809011750206_1.Designer.cs">
+      <DependentUpon>201809011750206_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809012028062_2.cs" />
+    <Compile Include="Migrations\201809012028062_2.Designer.cs">
+      <DependentUpon>201809012028062_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809012320506_verificado_cadastro.cs" />
+    <Compile Include="Migrations\201809012320506_verificado_cadastro.Designer.cs">
+      <DependentUpon>201809012320506_verificado_cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809012335226_Add_Disciplina.cs" />
+    <Compile Include="Migrations\201809012335226_Add_Disciplina.Designer.cs">
+      <DependentUpon>201809012335226_Add_Disciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\CadastAluno.xaml.cs">
       <DependentUpon>CadastAluno.xaml</DependentUpon>
     </Compile>
@@ -97,13 +116,11 @@
     <Compile Include="DAL\ProfessorDAO.cs" />
     <Compile Include="DAL\Singleton.cs" />
     <Compile Include="DAL\TurmaDAO.cs" />
-    <Compile Include="Migrations\201808231234066_inserir tabela.cs" />
-    <Compile Include="Migrations\201808231234066_inserir tabela.Designer.cs">
-      <DependentUpon>201808231234066_inserir tabela.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Ver.xaml.cs">
+      <DependentUpon>Ver.xaml</DependentUpon>
     </Compile>
     <Page Include="View\CadastAluno.xaml">
       <SubType>Designer</SubType>
@@ -118,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Ver.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,8 +160,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201808231234066_inserir tabela.resx">
-      <DependentUpon>201808231234066_inserir tabela.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809011726269_inicio.resx">
+      <DependentUpon>201809011726269_inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809011750206_1.resx">
+      <DependentUpon>201809011750206_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809012028062_2.resx">
+      <DependentUpon>201809012028062_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809012320506_verificado_cadastro.resx">
+      <DependentUpon>201809012320506_verificado_cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809012335226_Add_Disciplina.resx">
+      <DependentUpon>201809012335226_Add_Disciplina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,7 +187,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

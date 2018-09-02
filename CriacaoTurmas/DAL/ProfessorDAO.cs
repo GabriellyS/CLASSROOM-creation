@@ -29,14 +29,12 @@ namespace CriacaoTurmas.DAL
             return false;
         }
 
-        public static List<Professor> ListaAluno()
+        public static List<Professor> ListaProfessor()
         {
             return ctx.Professores.ToList();
         }
 
-        public static Professor
-
-            BuscarProfessorPorMatricula(Professor professor)
+        public static Professor BuscarProfessorPorMatricula(Professor professor)
         {
             return ctx.Professores.FirstOrDefault(x => x.matricula.Equals(professor.matricula));
         }

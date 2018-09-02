@@ -26,17 +26,30 @@ namespace CriacaoTurmas.View
             InitializeComponent();
         }
 
+        private void cboProfessor(object sender, RoutedEventArgs e)
+        {
+            cboProf.ItemsSource = Convert.ToString(ProfessorDAO.ListaProfessor());
+
+        }
+
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
+            Professor professor= new Professor
+            {
+                nome = (string)cboProf.SelectedItem
+            };
+
             if (!string.IsNullOrWhiteSpace(txtNome.Text))
             {
                 Turma turma = new Turma
                 {
                     Materia = txtNome.Text,
-
+                    professor = ProfessorDAO.BuscarProfessorPorMatricula(professor),
                 };
+
                 if (TurmaDAO.AdicionarTurma(turma))
                 {
+                    
                     MessageBox.Show("Turma Gravada com Sucesso!");
                     this.Close();
 

@@ -28,13 +28,14 @@ namespace CriacaoTurmas.View
 
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
+            Professor professor = new Professor { };
+
             if (!string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                Professor professor = new Professor
-                {
-                    nome = txtNome.Text,
+                professor.nome = txtNome.Text;
+                professor.disciplina = txtDisciplina.Text;
 
-                };
+               
                 if (ProfessorDAO.AdicionarProfessor(professor))
                 {
                     MessageBox.Show("Professor Gravado com Sucesso!");

@@ -28,15 +28,17 @@ namespace CriacaoTurmas.View
 
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
+            Aluno aluno = new Aluno { };
+
             if (!string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                Aluno aluno = new Aluno
-                {
-                    nome = txtNome.Text,
-                    telefone = txtFone.Text
+                aluno.nome = txtNome.Text;
+                aluno.telefone = txtFone.Text;
+                
 
-                };
-                if (AlunoDAO.AdicionarAluno(aluno))
+
+
+                if (AlunoDAO.AdicionarAluno(aluno) == true)
                 {
                     MessageBox.Show("Aluno Gravado com Sucesso!");
                     this.Close();
