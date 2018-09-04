@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +25,21 @@ namespace CriacaoTurmas.View
         public Ver()
         {
             InitializeComponent();
+            binddatagrid();
+        }
+
+        private void binddatagrid()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "select * from [Aluno]";
+            cmd.Connection = con;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable("Aluno");
+            da.Fill(dt);
+            ga.ItemsSource = dt.DefaultView;
         }
     }
 }

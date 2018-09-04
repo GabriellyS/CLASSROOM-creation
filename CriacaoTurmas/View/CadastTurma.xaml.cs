@@ -1,18 +1,11 @@
 ﻿using CriacaoTurmas.DAL;
 using CriacaoTurmas.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace CriacaoTurmas.View
 {
@@ -24,38 +17,51 @@ namespace CriacaoTurmas.View
         public CadastTurma()
         {
             InitializeComponent();
+            bindcombo(cboProfessor);
         }
 
-        private void cboProfessor(object sender, RoutedEventArgs e)
-        {
-            cboProf.ItemsSource = Convert.ToString(ProfessorDAO.ListaProfessor());
 
+        private void bindcombo(ComboBox cboProf)
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "select nome,matricula FROM [Professor]";
+            cmd.Connection = con;
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Professor");
+            cboProf.ItemsSource = ds.Tables[0].DefaultView;
+            cboProf.DisplayMemberPath = ds.Tables[0].Columns["nome"].ToString();
+            cboProf.SelectedValuePath = ds.Tables[0].Columns["matricula"].ToString();
         }
 
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            Professor professor= new Professor
-            {
-                nome = (string)cboProf.SelectedItem
-            };
+            Professor busca = new Professor();
+            busca.matricula = Convert.ToInt32(cboProfessor.SelectedValue);
 
             if (!string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                Turma turma = new Turma
-                {
-                    Materia = txtNome.Text,
-                    professor = ProfessorDAO.BuscarProfessorPorMatricula(professor),
-                };
+                Turma turma = new Turma();
+
+                turma.Materia = txtNome.Text;
+                turma.professor = ProfessorDAO.BuscarProfessorPorMatricula(busca);
+                turma.aluno = null;
+
 
                 if (TurmaDAO.AdicionarTurma(turma))
                 {
-                    
+
                     MessageBox.Show("Turma Gravada com Sucesso!");
                     this.Close();
 
                 }
                 else
                 {
+                    MessageBox.Show(Convert.ToString(cboProfessor.SelectedValue));
                     MessageBox.Show("Erro ao cadastrar turma!");
                 }
             }
@@ -63,8 +69,6 @@ namespace CriacaoTurmas.View
             {
                 MessageBox.Show("Favor preencher todos os campos!!");
             }
-
-
         }
     }
 }

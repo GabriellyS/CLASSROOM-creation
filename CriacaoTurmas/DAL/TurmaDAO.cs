@@ -29,9 +29,7 @@ namespace CriacaoTurmas.DAL
             return false;
         }
 
-        public static Turma
-
-            BuscarTurmaPorMateria(Turma turma)
+        public static Turma BuscarTurmaPorMateria(Turma turma)
         {
             return ctx.Turmas.FirstOrDefault(x => x.Materia.Equals(turma.Materia));
         }

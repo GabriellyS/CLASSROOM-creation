@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CriacaoTurmas.View"
         mc:Ignorable="d"
         Title="Cadastrar Turma" Height="368" Width="364">
-    <Grid Margin="20,10,18,11">
+    <Grid Margin="0,0,2,1" Background="Azure">
         <Label Content="Selecione os alunos:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.5,0.5" Height="26">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -22,14 +22,7 @@
         <Label Content="Nome da turma:" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Height="23" Width="101"/>
         <Label Content="Turma" HorizontalAlignment="Center" Margin="112,0,42,0" VerticalAlignment="Top" Height="25" Width="130"/>
         <Label Content="Selecione o Professor:" HorizontalAlignment="Left" Margin="6,168,0,0" VerticalAlignment="Top" Width="131"/>
-        <ComboBox ItemsSource="{Binding Professor}" x:Name="cboProf" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="151,168,0,0" Loaded="cboProfessor" Height="26" >
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Professor}" Width="100" />
-                    </StackPanel>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>
+        <ComboBox x:Name="cboProfessor" HorizontalAlignment="Left" Margin="154,168,0,0" VerticalAlignment="Top" Width="154" ItemsSource="{Binding}"/>
+
     </Grid>
 </Window>

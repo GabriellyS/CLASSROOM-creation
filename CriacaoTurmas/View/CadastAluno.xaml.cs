@@ -34,7 +34,7 @@ namespace CriacaoTurmas.View
             {
                 aluno.nome = txtNome.Text;
                 aluno.telefone = txtFone.Text;
-                
+
 
 
 

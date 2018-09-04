@@ -35,7 +35,7 @@ namespace CriacaoTurmas.View
                 professor.nome = txtNome.Text;
                 professor.disciplina = txtDisciplina.Text;
 
-               
+
                 if (ProfessorDAO.AdicionarProfessor(professor))
                 {
                     MessageBox.Show("Professor Gravado com Sucesso!");

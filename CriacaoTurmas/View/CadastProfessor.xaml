@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CriacaoTurmas.View"
         mc:Ignorable="d"
          Title="Cadastro de Professores" Height="368" Width="364">
-    <Grid Margin="32,10,40,26">
+    <Grid Margin="0,0,2,1" Background="Azure">
         <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="174,219,0,0" VerticalAlignment="Top" Width="83" Click="btnCadastrar_Click" Height="30"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="116,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Nome:" HorizontalAlignment="Left" Margin="23,110,0,0" VerticalAlignment="Top" Height="23" Width="57"/>

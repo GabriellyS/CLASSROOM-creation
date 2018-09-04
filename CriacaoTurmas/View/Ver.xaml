@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="ConsultaModelo" Height="450" Width="800">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" AutoGenerateColumns="False"
-        SelectionUnit="FullRow" SelectionMode="Extended" CanUserReorderColumns="True" CanUserResizeRows="True">
+        <DataGrid Name="ga">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome do Aluno"/>
+                <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome" Width="100"></DataGridTextColumn>
+
             </DataGrid.Columns>
         </DataGrid>
+
     </Grid>
 </Window>

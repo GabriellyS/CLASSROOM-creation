@@ -56,3 +56,4 @@ C:\Users\Gabs\source\repos\CriacaoTurmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.M
 C:\Users\Gabs\source\repos\CriacaoTurmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations._2.resources
 C:\Users\Gabs\source\repos\CriacaoTurmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.verificado_cadastro.resources
 C:\Users\Gabs\source\repos\CriacaoTurmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.Add_Disciplina.resources
+C:\Users\Gabs\source\repos\CriacaoTurmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.modificacao4.resources

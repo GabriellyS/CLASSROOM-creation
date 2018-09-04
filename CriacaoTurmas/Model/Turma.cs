@@ -16,6 +16,5 @@ namespace CriacaoTurmas.Model
         public string Materia { get; set; }
         public Professor professor { get; set; }
         public Aluno aluno { get; set; }
-        public DateTime Horario { get; set; }
     }
 }

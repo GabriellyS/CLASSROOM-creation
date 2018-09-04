@@ -58,6 +58,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -96,6 +97,10 @@
     <Compile Include="Migrations\201809012335226_Add_Disciplina.cs" />
     <Compile Include="Migrations\201809012335226_Add_Disciplina.Designer.cs">
       <DependentUpon>201809012335226_Add_Disciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809041356043_modificacao4.cs" />
+    <Compile Include="Migrations\201809041356043_modificacao4.Designer.cs">
+      <DependentUpon>201809041356043_modificacao4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\CadastAluno.xaml.cs">
@@ -174,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809012335226_Add_Disciplina.resx">
       <DependentUpon>201809012335226_Add_Disciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809041356043_modificacao4.resx">
+      <DependentUpon>201809041356043_modificacao4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
