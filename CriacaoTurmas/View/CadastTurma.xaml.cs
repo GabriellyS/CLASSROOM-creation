@@ -1,6 +1,7 @@
 ﻿using CriacaoTurmas.DAL;
 using CriacaoTurmas.Model;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -17,10 +18,45 @@ namespace CriacaoTurmas.View
         public CadastTurma()
         {
             InitializeComponent();
+
+            List<Aluno> alunos = new List<Aluno>();
+
+            // Criando uma lista ficticia para simular dados salvos no banco
+
+            for (int i = 0; i < 3; i++)
+            {
+                Aluno a = new Aluno();
+
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "select * from [Aluno]";
+                cmd.Connection = con;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable("Aluno");
+                da.Fill(dt);
+                lbxAlunos.ItemsSource = dt.DefaultView;
+
+                alunos.Add(a);
+            }
+
+            lbxAlunos.ItemsSource = alunos;
             bindcombo(cboProfessor);
         }
 
-
+        private void bindlist()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "select * from [Aluno]";
+            cmd.Connection = con;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable("Aluno");
+            da.Fill(dt);
+        }
         private void bindcombo(ComboBox cboProf)
         {
             SqlConnection con = new SqlConnection();

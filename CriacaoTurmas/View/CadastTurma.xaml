@@ -6,23 +6,32 @@
         xmlns:local="clr-namespace:CriacaoTurmas.View"
         mc:Ignorable="d"
         Title="Cadastrar Turma" Height="368" Width="364">
-    <Grid Margin="0,0,2,1" Background="Azure">
-        <Label Content="Selecione os alunos:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.5,0.5" Height="26">
+    <Grid Margin="0,0,2,2" Background="Azure">
+        <Label Content="Selecione os alunos:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.445,1.642" Height="26">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="0.633"/>
-                    <TranslateTransform/>
+                    <TranslateTransform X="-0.327" Y="-0.083"/>
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="201,271,0,0" VerticalAlignment="Top" Width="83" Click="btnCadastrar_Click" Height="30"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="116,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
-        <Label Content="Nome da turma:" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Height="23" Width="101"/>
-        <Label Content="Turma" HorizontalAlignment="Center" Margin="112,0,42,0" VerticalAlignment="Top" Height="25" Width="130"/>
-        <Label Content="Selecione o Professor:" HorizontalAlignment="Left" Margin="6,168,0,0" VerticalAlignment="Top" Width="131"/>
-        <ComboBox x:Name="cboProfessor" HorizontalAlignment="Left" Margin="154,168,0,0" VerticalAlignment="Top" Width="154" ItemsSource="{Binding}"/>
-
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="260,291,0,0" VerticalAlignment="Top" Width="83" Click="btnCadastrar_Click" Height="30"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="140,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+        <Label Content="Nome da turma:" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top" Height="23" Width="101"/>
+        <Label Content="Turma" HorizontalAlignment="Center" Margin="144,29,80,0" VerticalAlignment="Top" Height="25" Width="130"/>
+        <Label Content="Selecione o Professor:" HorizontalAlignment="Left" Margin="8,224,0,0" VerticalAlignment="Top" Width="131"/>
+        <ComboBox x:Name="cboProfessor" HorizontalAlignment="Left" Margin="144,228,0,0" VerticalAlignment="Top" Width="154" ItemsSource="{Binding}"/>
+        <ListBox x:Name="lbxAlunos" HorizontalAlignment="Left" Height="139" Margin="10,77,0,0" VerticalAlignment="Top" Width="318" AutomationProperties.ItemType="Aluno">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <CheckBox Name="chkAluno"/>
+                        <TextBlock Text="{Binding Nome}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
