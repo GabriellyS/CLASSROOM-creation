@@ -97,7 +97,6 @@ namespace CriacaoTurmas.View
                 }
                 else
                 {
-                    MessageBox.Show(Convert.ToString(cboProfessor.SelectedValue));
                     MessageBox.Show("Erro ao cadastrar turma!");
                 }
             }
