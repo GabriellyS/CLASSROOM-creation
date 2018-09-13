@@ -18,45 +18,38 @@ namespace CriacaoTurmas.View
         public CadastTurma()
         {
             InitializeComponent();
-
-            List<Aluno> alunos = new List<Aluno>();
-
-            // Criando uma lista ficticia para simular dados salvos no banco
-
-            for (int i = 0; i < 3; i++)
-            {
-                Aluno a = new Aluno();
-
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select * from [Aluno]";
-                cmd.Connection = con;
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable("Aluno");
-                da.Fill(dt);
-                lbxAlunos.ItemsSource = dt.DefaultView;
-
-                alunos.Add(a);
-            }
-
-            lbxAlunos.ItemsSource = alunos;
+            bindlist(lbxAlunos);
             bindcombo(cboProfessor);
         }
 
-        private void bindlist()
+
+        private void bindlist(ListBox lbxAlunos)
         {
+
+            List<Aluno> alunos = new List<Aluno>();
+
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select * from [Aluno]";
             cmd.Connection = con;
+
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable("Aluno");
-            da.Fill(dt);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Aluno");
+
+            foreach (DataRow rowDT in ds.Tables[0].Rows)
+            {
+                Aluno a = new Aluno();
+                a.nome = rowDT["nome"].ToString();
+                a.matricula = int.Parse(rowDT["matricula"].ToString());
+                alunos.Add(a);
+            }
+
+            lbxAlunos.ItemsSource = alunos;
         }
+
         private void bindcombo(ComboBox cboProf)
         {
             SqlConnection con = new SqlConnection();
@@ -83,6 +76,13 @@ namespace CriacaoTurmas.View
             {
                 Turma turma = new Turma();
 
+                //para cada aluno selecionado
+                foreach (Aluno a in lbxAlunos.SelectedItems)
+                {
+
+                }
+
+                
                 turma.Materia = txtNome.Text;
                 turma.professor = ProfessorDAO.BuscarProfessorPorMatricula(busca);
                 turma.aluno = null;

@@ -23,12 +23,12 @@
         <Label Content="Turma" HorizontalAlignment="Center" Margin="144,29,80,0" VerticalAlignment="Top" Height="25" Width="130"/>
         <Label Content="Selecione o Professor:" HorizontalAlignment="Left" Margin="8,224,0,0" VerticalAlignment="Top" Width="131"/>
         <ComboBox x:Name="cboProfessor" HorizontalAlignment="Left" Margin="144,228,0,0" VerticalAlignment="Top" Width="154" ItemsSource="{Binding}"/>
-        <ListBox x:Name="lbxAlunos" HorizontalAlignment="Left" Height="139" Margin="10,77,0,0" VerticalAlignment="Top" Width="318" AutomationProperties.ItemType="Aluno">
+        <ListBox x:Name="lbxAlunos" HorizontalAlignment="Left" Height="139" Margin="10,77,0,0" VerticalAlignment="Top" Width="318" AutomationProperties.ItemType="Aluno" SelectionMode="Multiple">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
-                        <CheckBox Name="chkAluno"/>
-                        <TextBlock Text="{Binding Nome}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Name="chkAluno" Margin="0,0,0,2px"/>
+                        <TextBlock Text="{Binding nome}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

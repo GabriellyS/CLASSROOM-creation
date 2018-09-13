@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CriacaoTurmas.View"
         mc:Ignorable="d"
-        Title="Início" Height="450" Width="800">
-    <Grid x:Name="gridPrincipal" Background="Azure">
+        Title="Início" Height="450" Width="713.315">
+    <Grid x:Name="gridPrincipal" Background="Azure" Margin="0,0,-8,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="169*"/>
             <RowDefinition Height="250*"/>
@@ -18,7 +18,7 @@
         <Button Content="Professor" HorizontalAlignment="Left" Width="82" Margin="232,41,0,176" Click="MenuItem_Click1" Grid.Row="1"/>
         <Button Content="Turma" HorizontalAlignment="Left" Width="82" Margin="232,89,0,128" Click="MenuItem_Click2" Grid.Row="1"/>
         <Button Content="Aluno" HorizontalAlignment="Left" Width="82" Margin="416,40,0,177" Click="MenuItem_Click3" Grid.Row="1"/>
-        <Label Content="Cadastros" HorizontalAlignment="Center" Margin="231,74,459,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
-        <Label Content="Listagem" HorizontalAlignment="Center" Margin="414,74,276,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
+        <Label Content="Cadastros" HorizontalAlignment="Center" Margin="233,74,368,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
+        <Label Content="Listagem" HorizontalAlignment="Center" Margin="416,74,190,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
     </Grid>
 </Window>
