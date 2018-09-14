@@ -80,12 +80,19 @@ namespace CriacaoTurmas.View
                 foreach (Aluno a in lbxAlunos.SelectedItems)
                 {
 
+                    Aluno buscal = new Aluno();
+                    buscal = null;
+                    buscal.matricula = Convert.ToInt32(lbxAlunos.SelectedValue);
+
+                    turma.aluno = AlunoDAO.BuscarAlunoPorMatricula(buscal);
+                    
+
                 }
 
                 
                 turma.Materia = txtNome.Text;
                 turma.professor = ProfessorDAO.BuscarProfessorPorMatricula(busca);
-                turma.aluno = null;
+                
 
 
                 if (TurmaDAO.AdicionarTurma(turma))
