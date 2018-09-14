@@ -78,29 +78,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Migrations\201809011726269_inicio.cs" />
-    <Compile Include="Migrations\201809011726269_inicio.Designer.cs">
-      <DependentUpon>201809011726269_inicio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809011750206_1.cs" />
-    <Compile Include="Migrations\201809011750206_1.Designer.cs">
-      <DependentUpon>201809011750206_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809012028062_2.cs" />
-    <Compile Include="Migrations\201809012028062_2.Designer.cs">
-      <DependentUpon>201809012028062_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809012320506_verificado_cadastro.cs" />
-    <Compile Include="Migrations\201809012320506_verificado_cadastro.Designer.cs">
-      <DependentUpon>201809012320506_verificado_cadastro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809012335226_Add_Disciplina.cs" />
-    <Compile Include="Migrations\201809012335226_Add_Disciplina.Designer.cs">
-      <DependentUpon>201809012335226_Add_Disciplina.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809041356043_modificacao4.cs" />
-    <Compile Include="Migrations\201809041356043_modificacao4.Designer.cs">
-      <DependentUpon>201809041356043_modificacao4.cs</DependentUpon>
+    <Compile Include="Migrations\201809141443413_Inicial.cs" />
+    <Compile Include="Migrations\201809141443413_Inicial.Designer.cs">
+      <DependentUpon>201809141443413_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\CadastAluno.xaml.cs">
@@ -165,23 +145,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201809011726269_inicio.resx">
-      <DependentUpon>201809011726269_inicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809011750206_1.resx">
-      <DependentUpon>201809011750206_1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809012028062_2.resx">
-      <DependentUpon>201809012028062_2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809012320506_verificado_cadastro.resx">
-      <DependentUpon>201809012320506_verificado_cadastro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809012335226_Add_Disciplina.resx">
-      <DependentUpon>201809012335226_Add_Disciplina.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809041356043_modificacao4.resx">
-      <DependentUpon>201809041356043_modificacao4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809141443413_Inicial.resx">
+      <DependentUpon>201809141443413_Inicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

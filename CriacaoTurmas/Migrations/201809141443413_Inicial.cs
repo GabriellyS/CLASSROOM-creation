@@ -3,16 +3,16 @@ namespace CriacaoTurmas.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Add_Disciplina : DbMigration
+    public partial class Inicial : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Professor", "disciplina", c => c.String());
+            DropColumn("dbo.Turma", "Horario");
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Professor", "disciplina");
+            AddColumn("dbo.Turma", "Horario", c => c.DateTime(nullable: false));
         }
     }
 }

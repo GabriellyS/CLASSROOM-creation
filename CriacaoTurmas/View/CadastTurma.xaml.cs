@@ -29,7 +29,7 @@ namespace CriacaoTurmas.View
             List<Aluno> alunos = new List<Aluno>();
 
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Configuração"].ConnectionString;
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select * from [Aluno]";
@@ -53,7 +53,7 @@ namespace CriacaoTurmas.View
         private void bindcombo(ComboBox cboProf)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Configuração"].ConnectionString;
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select nome,matricula FROM [Professor]";
@@ -75,15 +75,15 @@ namespace CriacaoTurmas.View
             if (!string.IsNullOrWhiteSpace(txtNome.Text))
             {
                 Turma turma = new Turma();
+                
 
                 //para cada aluno selecionado
                 foreach (Aluno a in lbxAlunos.SelectedItems)
                 {
-
+                    
                     Aluno buscal = new Aluno();
                     buscal = null;
-                    buscal.matricula = Convert.ToInt32(lbxAlunos.SelectedValue);
-
+                    buscal = (Aluno)lbxAlunos.SelectedValue;
                     turma.aluno = AlunoDAO.BuscarAlunoPorMatricula(buscal);
                     
 

@@ -31,7 +31,7 @@ namespace CriacaoTurmas.View
         private void binddatagrid()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Setting"].ConnectionString;
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Configuração"].ConnectionString;
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select * from [Aluno]";
