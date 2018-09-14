@@ -92,10 +92,10 @@ namespace CriacaoTurmas.View
                 
                 turma.Materia = txtNome.Text;
                 turma.professor = ProfessorDAO.BuscarProfessorPorMatricula(busca);
-                
+                MessageBox.Show(turma.aluno.nome.ToString());
 
 
-                if (TurmaDAO.AdicionarTurma(turma))
+                if (TurmaDAO.AdicionarTurma(turma)==true)
                 {
 
                     MessageBox.Show("Turma Gravada com Sucesso!");
