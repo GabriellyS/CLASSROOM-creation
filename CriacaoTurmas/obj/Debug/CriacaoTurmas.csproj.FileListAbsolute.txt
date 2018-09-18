@@ -148,12 +148,6 @@ C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\View\CadastTur
 C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\View\MainWindow.baml
 C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\View\Ver.baml
 C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.g.resources
-C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.inicio.resources
-C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations._1.resources
-C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations._2.resources
-C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.verificado_cadastro.resources
-C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.Add_Disciplina.resources
-C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.modificacao4.resources
 C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Properties.Resources.resources
 C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.csproj.GenerateResource.cache
 C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.csproj.CoreCompileInputs.cache
@@ -216,3 +210,4 @@ C:\Users\Aluno\Source\Repos\Criacao-Turmas2\CriacaoTurmas\obj\Debug\CriacaoTurma
 C:\Users\Aluno\Source\Repos\Criacao-Turmas2\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.Inicial.resources
 C:\Users\Aluno\Source\Repos\Criacao-Turmas2\CriacaoTurmas\obj\Debug\CriacaoTurmas.Properties.Resources.resources
 C:\Users\Aluno\Source\Repos\Criacao-Turmas2\CriacaoTurmas\obj\Debug\CriacaoTurmas.csproj.GenerateResource.Cache
+C:\Users\Gabs\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.Inicial.resources
