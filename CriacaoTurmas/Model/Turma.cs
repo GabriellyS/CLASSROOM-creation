@@ -15,6 +15,6 @@ namespace CriacaoTurmas.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Materia { get; set; }
         public Professor professor { get; set; }
-        public Aluno aluno { get; set; }
+        public List<Aluno> alunos { get; set; }
     }
 }

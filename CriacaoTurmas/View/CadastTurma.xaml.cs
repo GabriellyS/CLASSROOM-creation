@@ -71,36 +71,25 @@ namespace CriacaoTurmas.View
         {
             Professor busca = new Professor();
             busca.matricula = Convert.ToInt32(cboProfessor.SelectedValue);
+            List<Aluno> alunosaqui = new List<Aluno>();
+            Turma turma = new Turma();
 
             if (!string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                Turma turma = new Turma();
-                
-
                 //para cada aluno selecionado
                 foreach (Aluno a in lbxAlunos.SelectedItems)
                 {
-                    
-                    Aluno buscal = new Aluno();
-                    buscal = null;
-                    buscal = (Aluno)lbxAlunos.SelectedValue;
-                    turma.aluno = AlunoDAO.BuscarAlunoPorMatricula(buscal);
-                    
-
+                    alunosaqui.Add(a);   
                 }
-
                 
                 turma.Materia = txtNome.Text;
                 turma.professor = ProfessorDAO.BuscarProfessorPorMatricula(busca);
-                MessageBox.Show(turma.aluno.nome.ToString());
-
+                turma.alunos = alunosaqui;
 
                 if (TurmaDAO.AdicionarTurma(turma)==true)
                 {
-
                     MessageBox.Show("Turma Gravada com Sucesso!");
                     this.Close();
-
                 }
                 else
                 {

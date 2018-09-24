@@ -52,9 +52,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -78,9 +80,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Migrations\201809141443413_Inicial.cs" />
-    <Compile Include="Migrations\201809141443413_Inicial.Designer.cs">
-      <DependentUpon>201809141443413_Inicial.cs</DependentUpon>
+    <Compile Include="Migrations\201809241121281_ala.cs" />
+    <Compile Include="Migrations\201809241121281_ala.Designer.cs">
+      <DependentUpon>201809241121281_ala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809241203148_aula 2.cs" />
+    <Compile Include="Migrations\201809241203148_aula 2.Designer.cs">
+      <DependentUpon>201809241203148_aula 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809241204122_3.cs" />
+    <Compile Include="Migrations\201809241204122_3.Designer.cs">
+      <DependentUpon>201809241204122_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809241313591_mudanca.cs" />
+    <Compile Include="Migrations\201809241313591_mudanca.Designer.cs">
+      <DependentUpon>201809241313591_mudanca.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\CadastAluno.xaml.cs">
@@ -145,8 +159,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201809141443413_Inicial.resx">
-      <DependentUpon>201809141443413_Inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809241121281_ala.resx">
+      <DependentUpon>201809241121281_ala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809241203148_aula 2.resx">
+      <DependentUpon>201809241203148_aula 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809241204122_3.resx">
+      <DependentUpon>201809241204122_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809241313591_mudanca.resx">
+      <DependentUpon>201809241313591_mudanca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

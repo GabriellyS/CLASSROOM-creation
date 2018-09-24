@@ -7,13 +7,13 @@ namespace CriacaoTurmas.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Inicial : IMigrationMetadata
+    public sealed partial class aula2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Inicial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(aula2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809141443413_Inicial"; }
+            get { return "201809241203148_aula 2"; }
         }
         
         string IMigrationMetadata.Source
