@@ -34,7 +34,7 @@ namespace CriacaoTurmas.View
             con.ConnectionString = ConfigurationManager.ConnectionStrings["CriacaoTurmas.Properties.Settings.Configuração"].ConnectionString;
             con.Open();
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "select * from [Turma]";
+            cmd.CommandText = "select Nome_turma,matriculaProfessor,Aluno_matricula from [Turma],[TurmaAlunoes]";
             cmd.Connection = con;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable("Turma");

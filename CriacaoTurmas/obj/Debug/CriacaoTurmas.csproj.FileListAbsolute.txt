@@ -211,3 +211,6 @@ C:\Users\Aluno\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas
 C:\Users\Aluno\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.AjustandoRelacionamentosTurmaProfessor.resources
 C:\Users\Aluno\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\View\VerTurmas.g.cs
 C:\Users\Aluno\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\View\VerTurmas.baml
+C:\Users\Aluno\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\CriacaoTurmas.Migrations.AjustandoNomeTurma.resources
+C:\Users\Aluno\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\View\VerProfessor.g.cs
+C:\Users\Aluno\Source\Repos\Criacao-Turmas\CriacaoTurmas\obj\Debug\View\VerProfessor.baml

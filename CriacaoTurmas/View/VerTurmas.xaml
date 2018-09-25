@@ -10,8 +10,6 @@
     <Grid>
         <DataGrid Name="turma">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="100"></DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome" Width="100"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

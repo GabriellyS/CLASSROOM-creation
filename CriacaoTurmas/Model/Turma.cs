@@ -15,7 +15,7 @@ namespace CriacaoTurmas.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TurmaID { get; set; }
 
-        public string Materia { get; set; }
+        public string Nome_turma { get; set; }
 
         [ForeignKey("professor")]
         public int matriculaProfessor { get; set; }

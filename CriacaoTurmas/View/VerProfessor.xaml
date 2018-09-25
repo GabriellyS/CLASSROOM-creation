@@ -1,4 +1,4 @@
-﻿<Window x:Class="CriacaoTurmas.View.Ver"
+﻿<Window x:Class="CriacaoTurmas.View.VerProfessor"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         WindowStartupLocation = "CenterScreen"
@@ -6,12 +6,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CriacaoTurmas.View"
         mc:Ignorable="d"
-        Title="ConsultaModelo" Height="450" Width="800">
+        Title="ConsultaModeloTurma" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="ga">
+        <DataGrid Name="professor">
             <DataGrid.Columns>
             </DataGrid.Columns>
         </DataGrid>
-
     </Grid>
 </Window>

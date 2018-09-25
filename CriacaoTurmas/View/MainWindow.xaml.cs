@@ -52,5 +52,11 @@ namespace CriacaoTurmas.View
             VerTurmas form = new VerTurmas();
             form.ShowDialog();
         }
+
+        private void MenuItem_Click5(object sender, RoutedEventArgs e)
+        {
+            VerProfessor form = new VerProfessor();
+            form.ShowDialog();
+        }
     }
 }

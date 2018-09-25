@@ -96,6 +96,10 @@
     <Compile Include="Migrations\201809251218476_AjustandoRelacionamentosTurmaProfessor.Designer.cs">
       <DependentUpon>201809251218476_AjustandoRelacionamentosTurmaProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809251332451_AjustandoNomeTurma.cs" />
+    <Compile Include="Migrations\201809251332451_AjustandoNomeTurma.Designer.cs">
+      <DependentUpon>201809251332451_AjustandoNomeTurma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\CadastAluno.xaml.cs">
       <DependentUpon>CadastAluno.xaml</DependentUpon>
@@ -121,6 +125,9 @@
     <Compile Include="View\Ver.xaml.cs">
       <DependentUpon>Ver.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\VerProfessor.xaml.cs">
+      <DependentUpon>VerProfessor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VerTurmas.xaml.cs">
       <DependentUpon>VerTurmas.xaml</DependentUpon>
     </Compile>
@@ -141,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Ver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VerProfessor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -177,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809251218476_AjustandoRelacionamentosTurmaProfessor.resx">
       <DependentUpon>201809251218476_AjustandoRelacionamentosTurmaProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809251332451_AjustandoNomeTurma.resx">
+      <DependentUpon>201809251332451_AjustandoNomeTurma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

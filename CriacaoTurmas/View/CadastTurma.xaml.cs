@@ -44,6 +44,7 @@ namespace CriacaoTurmas.View
                 Aluno a = new Aluno();
                 a.nome = rowDT["nome"].ToString();
                 a.matricula = int.Parse(rowDT["matricula"].ToString());
+                a.telefone = rowDT["telefone"].ToString();
                 alunos.Add(a);
             }
 
@@ -82,7 +83,7 @@ namespace CriacaoTurmas.View
                     alunosaqui.Add(a);   
                 }
                 
-                turma.Materia = txtNome.Text;
+                turma.Nome_turma = txtNome.Text;
                 turma.professor = ProfessorDAO.BuscarProfessorPorMatricula(busca);
                 turma.alunos = alunosaqui;
 
