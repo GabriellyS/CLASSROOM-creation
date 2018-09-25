@@ -80,21 +80,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Migrations\201809241121281_ala.cs" />
-    <Compile Include="Migrations\201809241121281_ala.Designer.cs">
-      <DependentUpon>201809241121281_ala.cs</DependentUpon>
+    <Compile Include="Migrations\201809251125296_aula.cs" />
+    <Compile Include="Migrations\201809251125296_aula.Designer.cs">
+      <DependentUpon>201809251125296_aula.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809241203148_aula 2.cs" />
-    <Compile Include="Migrations\201809241203148_aula 2.Designer.cs">
-      <DependentUpon>201809241203148_aula 2.cs</DependentUpon>
+    <Compile Include="Migrations\201809251211106_AjustandoCamposTurma.cs" />
+    <Compile Include="Migrations\201809251211106_AjustandoCamposTurma.Designer.cs">
+      <DependentUpon>201809251211106_AjustandoCamposTurma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809241204122_3.cs" />
-    <Compile Include="Migrations\201809241204122_3.Designer.cs">
-      <DependentUpon>201809241204122_3.cs</DependentUpon>
+    <Compile Include="Migrations\201809251217064_AjustandoRelacionamentosTurmaAluno.cs" />
+    <Compile Include="Migrations\201809251217064_AjustandoRelacionamentosTurmaAluno.Designer.cs">
+      <DependentUpon>201809251217064_AjustandoRelacionamentosTurmaAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809241313591_mudanca.cs" />
-    <Compile Include="Migrations\201809241313591_mudanca.Designer.cs">
-      <DependentUpon>201809241313591_mudanca.cs</DependentUpon>
+    <Compile Include="Migrations\201809251218476_AjustandoRelacionamentosTurmaProfessor.cs" />
+    <Compile Include="Migrations\201809251218476_AjustandoRelacionamentosTurmaProfessor.Designer.cs">
+      <DependentUpon>201809251218476_AjustandoRelacionamentosTurmaProfessor.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\CadastAluno.xaml.cs">
@@ -121,6 +121,9 @@
     <Compile Include="View\Ver.xaml.cs">
       <DependentUpon>Ver.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\VerTurmas.xaml.cs">
+      <DependentUpon>VerTurmas.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\CadastAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Ver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VerTurmas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,17 +166,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201809241121281_ala.resx">
-      <DependentUpon>201809241121281_ala.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809251125296_aula.resx">
+      <DependentUpon>201809251125296_aula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809241203148_aula 2.resx">
-      <DependentUpon>201809241203148_aula 2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809251211106_AjustandoCamposTurma.resx">
+      <DependentUpon>201809251211106_AjustandoCamposTurma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809241204122_3.resx">
-      <DependentUpon>201809241204122_3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809251217064_AjustandoRelacionamentosTurmaAluno.resx">
+      <DependentUpon>201809251217064_AjustandoRelacionamentosTurmaAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809241313591_mudanca.resx">
-      <DependentUpon>201809241313591_mudanca.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809251218476_AjustandoRelacionamentosTurmaProfessor.resx">
+      <DependentUpon>201809251218476_AjustandoRelacionamentosTurmaProfessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

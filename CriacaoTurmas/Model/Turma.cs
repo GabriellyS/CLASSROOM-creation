@@ -13,8 +13,14 @@ namespace CriacaoTurmas.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int TurmaID { get; set; }
+
         public string Materia { get; set; }
-        public Professor professor { get; set; }
-        public List<Aluno> alunos { get; set; }
+
+        [ForeignKey("professor")]
+        public int matriculaProfessor { get; set; }
+        public virtual Professor professor { get; set; }
+
+        public virtual ICollection<Aluno> alunos { get; set; }
     }
 }

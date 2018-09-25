@@ -21,5 +21,6 @@
         <Button Content="Aluno" HorizontalAlignment="Left" Width="82" Margin="416,44,0,173" Click="MenuItem_Click3" Grid.Row="1"/>
         <Label Content="Cadastros" HorizontalAlignment="Center" Margin="233,74,368,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
         <Label Content="Listagem" HorizontalAlignment="Center" Margin="416,74,190,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
+        <Button Content="Turma" HorizontalAlignment="Left" Width="82" Margin="416,89,0,128" Click="MenuItem_Click4" Grid.Row="1"/>
     </Grid>
 </Window>
