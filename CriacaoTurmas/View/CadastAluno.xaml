@@ -13,6 +13,8 @@
         <Label Content="Telefone:" HorizontalAlignment="Left" Margin="27,138,0,0" VerticalAlignment="Top" Height="23" Width="57"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="120,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtFone" HorizontalAlignment="Left" Height="23" Margin="120,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="120,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="27,166,0,0" VerticalAlignment="Top" Height="23" Width="57"/>
         <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="174,219,0,0" VerticalAlignment="Top" Width="83" Click="btnCadastrar_Click" Height="30"/>
     </Grid>
 </Window>

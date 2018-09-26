@@ -16,6 +16,7 @@ namespace CriacaoTurmas.Model
         public int matricula { get; set; }
         public String nome { get; set; }
         public String telefone { get; set; }
+        public String email { get; set; }
 
         public virtual ICollection<Turma> Turmas { get; set; }
 

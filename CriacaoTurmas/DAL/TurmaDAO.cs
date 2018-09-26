@@ -22,7 +22,7 @@ namespace CriacaoTurmas.DAL
                     ctx.SaveChanges();
                     return true;
                 }
-                catch (Exception teste)
+                catch (Exception)
                 {
                     //MessageBox.Show(teste.Message);
                     return false;

@@ -119,6 +119,9 @@
     <Compile Include="DAL\ProfessorDAO.cs" />
     <Compile Include="DAL\Singleton.cs" />
     <Compile Include="DAL\TurmaDAO.cs" />
+    <Compile Include="View\ExcluirProfessor.xaml.cs">
+      <DependentUpon>ExcluirProfessor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CadastTurma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ExcluirProfessor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

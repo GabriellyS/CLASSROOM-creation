@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace CriacaoTurmas.View
 {
@@ -41,21 +29,22 @@ namespace CriacaoTurmas.View
             CadastTurma form = new CadastTurma();
             form.ShowDialog();
         }
-        
+
         private void MenuItem_Click3(object sender, RoutedEventArgs e)
         {
             Ver form = new Ver();
             form.ShowDialog();
         }
+
         private void MenuItem_Click4(object sender, RoutedEventArgs e)
         {
-            VerTurmas form = new VerTurmas();
+            VerProfessor form = new VerProfessor();
             form.ShowDialog();
         }
 
         private void MenuItem_Click5(object sender, RoutedEventArgs e)
         {
-            VerProfessor form = new VerProfessor();
+            ExcluirProfessor form = new ExcluirProfessor();
             form.ShowDialog();
         }
     }

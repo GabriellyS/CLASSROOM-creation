@@ -21,7 +21,7 @@
         <Button Content="Aluno" HorizontalAlignment="Left" Width="82" Margin="416,162,0,224" Click="MenuItem_Click3" Grid.RowSpan="2"/>
         <Label Content="Cadastros" HorizontalAlignment="Center" Margin="233,74,368,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
         <Label Content="Listagem" HorizontalAlignment="Center" Margin="416,74,190,0" VerticalAlignment="Top" Width="102" Height="34" FontSize="18"/>
-        <Button Content="Turma" HorizontalAlignment="Left" Width="82" Margin="416,89,0,128" Click="MenuItem_Click4" Grid.Row="1"/>
-        <Button Content="Professor" HorizontalAlignment="Left" Width="82" Margin="416,41,0,176" Click="MenuItem_Click5" Grid.Row="1"/>
+        <Button Content="Professor" HorizontalAlignment="Left" Width="82" Margin="416,41,0,176" Click="MenuItem_Click4" Grid.Row="1"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Width="82" Margin="418,89,0,128" Click="MenuItem_Click5" Grid.Row="1"/>
     </Grid>
 </Window>
