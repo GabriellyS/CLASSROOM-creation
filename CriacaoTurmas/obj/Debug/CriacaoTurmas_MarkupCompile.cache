@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Gabs\Source\Repos\Criacao-Turmas3\CriacaoTurmas\App.xaml
-7-2026105832
+81863417708
 
-34-315621444
+311190797222
 17-1907828813
-View\CadastAluno.xaml;View\CadastProfessor.xaml;View\CadastTurma.xaml;View\MainWindow.xaml;View\Ver.xaml;View\VerProfessor.xaml;View\VerTurmas.xaml;
+View\CadastAluno.xaml;View\CadastProfessor.xaml;View\CadastTurma.xaml;View\ExcluirProfessor.xaml;View\MainWindow.xaml;View\Ver.xaml;View\VerProfessor.xaml;View\VerTurmas.xaml;
 
-True
+False
 

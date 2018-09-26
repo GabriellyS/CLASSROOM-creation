@@ -74,4 +74,5 @@ namespace CriacaoTurmas.View
                 MessageBox.Show("Erro ao deletar professor!!");
             }
         }
+    }
 }
